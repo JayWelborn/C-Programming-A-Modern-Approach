@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
+/**
+ * Exercise s asks the student to print the volume of a sphere of radius 10.
+ *
+ * @return 0
+ */
 int main(void)
 {
     int r = 10;

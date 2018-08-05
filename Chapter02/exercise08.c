@@ -1,7 +1,14 @@
 #include <stdio.h>
 
+/** Utility function for finding the monthly balance of a loan with a given interest rate */
 float calc_balance(float init, float rate, float payment);
 
+/**
+ * Exercise 8 asks the student to calculate the monthly remaining balance for three months on a loan with the
+ * user providing the initial loan amount, annual interest rate, and monthly payment.
+ *
+ * @return 0
+ */
 int main(void) {
     float init;
     float rate;
@@ -27,6 +34,14 @@ int main(void) {
     return 0;
 }
 
+/**
+ * Calculate remaining balance given initial balance, interest rate, and monthly payment
+ *
+ * @param init balance at start of month
+ * @param rate interest rate converted to percentage
+ * @param payment monthly payment amount
+ * @return remaining balance at the end of the month
+ */
 float calc_balance(float init, float rate, float payment) {
     init += init * rate;
     init -= payment;

@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * Exercise 8 asks the student to prompt the user for an dollar amount, then print the number of 20, 10, 5, and 1 dollar
+ * bills required to make the given value.
+ *
+ * @return 0
+ */
 int main(void) {
     printf("Enter a dollar amount: ");
     int amt;

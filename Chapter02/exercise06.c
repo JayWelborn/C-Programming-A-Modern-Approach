@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * Exercise 5 asks the student to prompt the user for an integer, then print the result of a polynomial equation
+ * to STDOUT using Horner's rule.
+ *
+ * @return 0
+ */
 int main(void) {
     printf("Enter a value for x: ");
     int x;

@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * Exercise 1 asks the student to print a check mark symbol using asterisks on the command line.
+ *
+ * @return 0
+ */
 int main(void) {
     printf("%8s\n", "*");
     printf("%7s\n", "*");

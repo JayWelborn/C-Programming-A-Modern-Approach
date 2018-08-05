@@ -3,6 +3,12 @@
 //
 #include <stdio.h>
 
+/**
+ * Exercise 4 asks the student to promt the user for a dollar amount, and print the dollar amount to the command
+ * line with a 5% tax applied.
+ *
+ * @return 0
+ */
 int main(void) {
     printf("Enter an amount: ");
     float amount;
