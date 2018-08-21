@@ -21,4 +21,5 @@
          hours = 12;
      }
      printf("Equivalent 12-hour time: %02d:%02d %s", hours, minutes, suffix);
+     return 0;
  }
