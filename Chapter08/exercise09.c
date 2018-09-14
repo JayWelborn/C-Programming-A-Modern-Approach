@@ -26,12 +26,14 @@ int main(void) {
             {'.', '.', '.', '.', '.', '.', '.', '.', '.', '.'}
     };
 
-    int y = 0, x = 0, steps = 0, prevX = 0, prevY = 0, direction;
-    int prev[ALPHABET_LENGTH][2] = {0,0};
+    int y = 0, x = 0, steps = 0, direction;
     char current = 'B';
     arr[0][0] = 'A';
-    srand(time(NULL));
+    srand((unsigned int)time(NULL));
     while (steps < ALPHABET_LENGTH - 1) {
+        if (!hasOpenNeighbors(arr, x, y)) {
+            break;
+        }
         direction = rand() % 4;
         if (direction == 0 && x > 0) {
             x--;
@@ -74,9 +76,6 @@ int main(void) {
                 y--;
             }
         } else {
-            if (!hasOpenNeighbors(arr, x, y)) {
-                break;
-            }
             continue;
         }
     }
